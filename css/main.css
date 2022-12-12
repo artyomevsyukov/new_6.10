@@ -1,0 +1,118 @@
+@import "./reset.css";
+@import "./media.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --green: #007765;
+  --grey: #eeeeee;
+
+  --text-black: var(--black);
+  --text-white: var(--white);
+  --text-green: var(--green);
+  --bg-color-green: var(--green);
+  --bg-color-grey: var(--grey);
+  --bg-color-white: var(--white);
+}
+
+/* General */
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.title-1 {
+  padding: 48px 0 16px;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-green);
+}
+/* Nav */
+
+.nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg-color-green);
+  height: 84px;
+}
+
+.nav-row {
+  margin: 0 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+}
+.nav-list {
+  display: flex;
+  text-decoration: none;
+  color: var(--text-white);
+  /* column-gap: 23px; */
+}
+
+.nav-list__item {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.nav-list__link {
+  color: var(--text-white);
+  padding: 8px;
+}
+
+/* .nav-list__item::before a + a {
+  content: "|";
+} */
+
+/* Jumbotron */
+
+.Jumbotron {
+  min-height: 403px;
+  background-image: url(../img/Jumbotron.png);
+  background-size: cover;
+  background-position: center center;
+}
+.Jumbotron-title {
+  margin: 0 auto;
+  padding: 160px 0;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 84px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-white);
+}
+
+/* The-Problem */
+
+.The-Problem {
+  background-color: var(--bg-color-grey);
+}
+
+.The-Problem__text {
+  margin: 0 auto;
+  min-height: 488px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.The-Problem__text p + p {
+  margin-top: 1.5em;
+}
