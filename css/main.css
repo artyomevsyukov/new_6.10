@@ -11,6 +11,7 @@ body {
   --white: #fff;
   --green: #007765;
   --grey: #eeeeee;
+  --footer: #333333;
 
   --text-black: var(--black);
   --text-white: var(--white);
@@ -18,6 +19,7 @@ body {
   --bg-color-green: var(--green);
   --bg-color-grey: var(--grey);
   --bg-color-white: var(--white);
+  --bg-color-footer: var(--footer);
 }
 
 /* General */
@@ -35,6 +37,10 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: var(--text-green);
+}
+
+.none {
+  display: none !important;
 }
 /* Nav */
 
@@ -81,13 +87,13 @@ body {
 
 /* Jumbotron */
 
-.Jumbotron {
+.jumbotron {
   min-height: 403px;
   background-image: url(../img/Jumbotron.png);
   background-size: cover;
   background-position: center center;
 }
-.Jumbotron-title {
+.jumbotron-title {
   margin: 0 auto;
   padding: 160px 0;
   font-size: 72px;
@@ -100,11 +106,11 @@ body {
 
 /* The-Problem */
 
-.The-Problem {
+.the-problem {
   background-color: var(--bg-color-grey);
 }
 
-.The-Problem__text {
+.the-problem__text {
   margin: 0 auto;
   min-height: 488px;
   font-size: 32px;
@@ -113,6 +119,81 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-.The-Problem__text p + p {
+.the-problem__text p + p {
   margin-top: 1.5em;
+}
+
+/* Hero */
+.hero {
+  padding: 128px 108px;
+  background-image: url(../img/Hero.png);
+  background-position: center center;
+  background-size: cover;
+}
+.hero__text {
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-white);
+}
+
+/* Introducing PiedPiperCoin */
+
+.ppc {
+}
+
+.ppc__logo {
+  height: 115px;
+  width: 115px;
+  float: left;
+  margin-right: 48px;
+}
+.ppc__text {
+  padding-bottom: 92px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.ppc__text p + p {
+  margin-top: 40px;
+}
+
+/* The Team */
+.the-team {
+  background-color: var(--bg-color-grey);
+}
+
+.the-team__title {
+  padding: 48px 0 32px;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-green);
+}
+
+.the-team {
+}
+
+.the-team__title {
+}
+.footer {
+  /* padding: 50px 0 62px; */
+  background-color: var(--bg-color-footer);
+}
+.footer__text {
+  padding: 50px 285px 62px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-white);
 }
