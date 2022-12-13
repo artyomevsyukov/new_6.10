@@ -225,11 +225,19 @@ a.anchor {
   background-color: var(--bg-color-footer);
 }
 .footer__text {
-  padding: 50px 285px 62px;
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 50px 0 62px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
   color: var(--text-white);
+}
+
+@media (max-width: 1219px) {
+  .container {
+    padding: 0 55px;
+  }
 }
